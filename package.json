@@ -1,0 +1,12 @@
+{
+  "name": "realworld-sonar",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "install:all": "npm install",
+    "build:api": "npm run build --workspace=apps/api",
+    "build:docs": "npm run build --workspace=apps/documentation"
+  }
+}
